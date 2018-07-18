@@ -1,0 +1,43 @@
+
+.main{
+    margin-top:20px;
+    margin-bottom: 90px;
+
+}
+nav{
+    margin-left: 50%;
+    transform: translate(-25%,-2%);
+}
+nav li{
+    display :inline-block;
+    padding: 3px;
+
+}
+nav li a{
+    padding:4px 10px;
+    color:#696969;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+ a:hover{
+    border-bottom: solid #e67e22;
+
+}
+
+a:active{
+    border-bottom: solid #e67e22;
+    color: #e67e22;
+   
+}
+.tabs li :active {
+    color:#e67e22;
+    border-bottom-color: #e67e22;
+   
+}
+.tabs li.is-active a {
+    border-bottom-color: #e67e22;
+    color: #e67e22;
+  }
+
+
+

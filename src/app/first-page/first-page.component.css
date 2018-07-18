@@ -1,0 +1,88 @@
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(assets/food/ressources/tra.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+ nav{
+    float:right;
+}
+nav li{
+    margin-top: 20px;
+    display :inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+nav li a{
+    padding:4px 0px;
+    color:#fff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+} 
+ a:hover{
+    border-bottom: solid #e67e22;
+
+}
+a:active{
+    border-bottom: solid #e67e22;
+
+}
+.button{
+    transition: 70ms;
+    color:#fff;
+    background-color: #e67e22;
+    border:1px solid #e67e22;
+    font-size: 20px;
+}
+.button:hover{
+    
+    background-color:#cf6d17;
+}
+
+.centred-texting{
+    position :absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-10%,-10%);
+
+}
+
+/* animation */
+.card {
+    position: relative;
+    flex: 1 1 100%;
+    margin: 31px 0;
+    padding: 20px;
+    background: white;
+  }
+  @media screen and (min-width: 768px) {
+    .card {
+      flex-basis: calc(33.33% - (62px + 40px));
+      margin: 0 31px;
+    }
+  }
+  
+  .card__three::before, .card__three::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card__three::before {
+    transform-origin: left top;
+  }
+  .card__three::after {
+    transform-origin: right bottom;
+  }
+  .card__three:hover::before, .card__three:hover::after, .card__three:focus::before, .card__three:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+  
